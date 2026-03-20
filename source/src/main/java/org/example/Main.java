@@ -10,7 +10,7 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    static void main() {
+    public static void main(String[] args ) {
 
         Sinhvien sv;
         ArrayList<Sinhvien> listSinhvien = new ArrayList();
@@ -77,9 +77,10 @@ public class Main {
 
                     DataFormatter formatter = new DataFormatter();
                     int soluongImport =0;
+                    System.out.println("Thư mục hiện tại: " + new File(".").getAbsolutePath());
 
 
-                    try (Workbook workbook = WorkbookFactory.create(new File("D:\\laptrinh\\quanlysinhvien\\source\\src\\main\\java\\org\\example\\datasinhvien.xlsx"))) {
+                    try (Workbook workbook = WorkbookFactory.create(new File("source/src/main/java/org/example/datasinhvien.xlsx"))) {
                         Sheet sheet = workbook.getSheetAt(0);
 
                         for (Row row : sheet) {
