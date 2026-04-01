@@ -10,8 +10,18 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args ) {
 
+
+    public static  void hamtestcollection(){
+        System.out.println("chao mung ban da den voi chuong trinh conllection");
+
+
+
+
+    }
+
+    public  static void hamchinh()
+    {
         Sinhvien sv;
         ArrayList<Sinhvien> listSinhvien = new ArrayList();
         Scanner docBanphim = new Scanner(System.in  );
@@ -181,6 +191,16 @@ public class Main {
 
 
 
+
+
+
+    }
+
+    public static void main(String[] args ) {
+
+
+
+            hamtestcollection();
 
 
 
