@@ -2,7 +2,7 @@ package org.example;
 
 import org.apache.commons.math3.analysis.function.Sinh;
 
-public class Sinhvien {
+public abstract  class Sinhvien {
 
     private String id;
     private String ten;
@@ -107,8 +107,7 @@ public class Sinhvien {
     }
 
 
-
-
+    public abstract Double tinhDiemtrungbinh();
 
 
 
