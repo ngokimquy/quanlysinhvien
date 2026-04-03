@@ -22,6 +22,8 @@ public class Main {
 
     public  static void hamchinh()
     {
+
+
         SinhvienCNTT sv;
         ArrayList<SinhvienCNTT> listSinhvien = new ArrayList();
 

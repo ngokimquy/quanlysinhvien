@@ -25,13 +25,16 @@ public class SinhvienKetoan extends Sinhvien {
 
     public String toString()
     {
-        return  super.toString() + " " + getDiemKetoan() + " " + getDiemMarketing();
+        return  super.toString() + " " + getDiemKetoan() + " " + getDiemMarketing() + " diem trung binh: " + this.tinhDiemtrungbinh();
     }
 
     @Override
     public  Double tinhDiemtrungbinh()
     {
-        return  7.9;
+        double diemtrungbinh;
+        diemtrungbinh = (this.getDiemKetoan() + this.getDiemMarketing()) / 2;
+        return  diemtrungbinh;
+
     }
 
 

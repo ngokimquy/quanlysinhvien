@@ -32,13 +32,15 @@ public class SinhvienCNTT extends  Sinhvien {
     public String toString(){
 
 
-        return super.toString() + " " + this.diemJava + " " +   this.diemWeb;
+        return super.toString() + " " + this.diemJava + " " +   this.diemWeb + " diem trung binh: " + this.tinhDiemtrungbinh();
     }
 
     @Override
     public  Double tinhDiemtrungbinh()
     {
-        return  8.8;
+        double diemtrungbinh;
+        diemtrungbinh = (this.getDiemJava()*0.7 + this.getDiemWeb()*0.3);
+        return  diemtrungbinh;
     }
 
 }
